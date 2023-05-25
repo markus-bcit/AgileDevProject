@@ -7,7 +7,7 @@ from database.models import User, Product, Cache, Product, Order, OrderLine
 
 app = Flask(__name__, static_url_path='/static')
 app.config['SECRET_KEY'] = 'secret'
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////home/markus/actions-runner/_work/AgileDevProject/AgileDevProject/database.db"
 app.instance_path = Path(".").resolve()
 db.init_app(app)
 
