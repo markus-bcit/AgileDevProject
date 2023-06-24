@@ -2,8 +2,8 @@ from pathlib import Path
 import datetime
 from flask import Flask, jsonify, render_template, request, redirect, url_for
 from flask_login import LoginManager, login_user, logout_user, login_required, UserMixin, current_user
-from database.database import db
-from database.models import User, Product, Cache, Product, Order, OrderLine
+from app.database.database import db
+from app.database.models import User, Product, Cache, Product, Order, OrderLine
 
 app = Flask(__name__, static_url_path='/static')
 app.config['SECRET_KEY'] = 'secret'

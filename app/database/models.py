@@ -1,4 +1,4 @@
-from database.database import db
+from app.database.database import db
 from flask_login import UserMixin
 from flask import jsonify
 
